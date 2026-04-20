@@ -8,7 +8,15 @@ theme: dark # light|dark
 
 First slide content -->
 
-![](https://vsueiro.com/media/profile/vinicius-sueiro-2025-02.jpg "title here")
+![](https://images.pdimagearchive.org/collections/colour-analysis-charts-by-emily-noyes-vanderpoel-1902/25813027795_1f4b401768_o.jpg)
+
+---
+
+![](https://images.pdimagearchive.org/collections/visualizing-history-the-polish-system/chronologicalhis00peab_0139-floor-chart.jpeg)
+
+---
+
+![](https://images.pdimagearchive.org/collections/w-e-b-du-bois-hand-drawn-infographics-of-african-american-life-1900/32764473915_e36c65737e_o.jpg)
 
 ---
 

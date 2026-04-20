@@ -14,5 +14,7 @@
 
 .slide > *  {
   max-width: 90svmin; 
+  max-height: 90svmin;
+  /* TODO: Fix width and height of images to avoid scrolling */
 }
 
