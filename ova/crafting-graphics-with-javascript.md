@@ -4,9 +4,9 @@ title: Crafing Graphics with JavaScript
 theme: dark # light|dark
 ---
 
-# Test heading
+<!-- # Test heading
 
-First slide content
+First slide content -->
 
 ![](https://vsueiro.com/media/profile/vinicius-sueiro-2025-02.jpg "title here")
 

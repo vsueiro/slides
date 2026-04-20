@@ -2,7 +2,7 @@
 function createSlide(index) {
   const slide = document.createElement('section');
   slide.classList.add('slide');
-  slide.hidden = index === 0 ? false : true;
+  slide.hidden = true;
 
   if (index !== undefined) {
     slide.id = `slide-${index}`;
@@ -33,6 +33,9 @@ function slidify(container) {
 
   container.replaceChildren(...sections);
 
+  // Unhide container
+  container.hidden = false;
+
   return sections;
 }
 
@@ -48,7 +51,6 @@ let current = 0;
 function show(slide) {
   slide.hidden = false;
   window.location.hash = slide.id;
-  // history.replaceState(null, null, `#${section.id}`);
 }
 
 function hide(slide) {
@@ -57,7 +59,7 @@ function hide(slide) {
 
 function changeSlide(target) {
   slides.forEach((slide, index) => {
-    if (index === target) {
+    if (index === target || slide === target) {
       show(slide);
     } else {
       hide(slide);
@@ -87,8 +89,22 @@ function prevSlide() {
   changeSlide(current);
 }
 
-// Ensure first slide appears if no #slide-… is on URL
-if (!window.location.hash) {
+// Display slide that matches URL #
+if (window.location.hash) {
+  console.log(window.location.hash);
+  const slide = document.querySelector(window.location.hash);
+
+  console.log(slide);
+
+  if (slide) {
+    changeSlide(slide);
+  } else {
+    changeSlide(0);
+  }
+  
+}
+// Otherwise, show first slide appears if no #slide-… is on URL
+else {
   changeSlide(0);
 }
 

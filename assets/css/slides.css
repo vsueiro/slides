@@ -1,12 +1,18 @@
-/* *, *::before, *::after {
-  box-sizing: border-box;
+/* https://css-tricks.com/the-hidden-attribute-is-visibly-weak/ */
+[hidden] { 
+  display: none !important;
 }
-
-body {
-  margin: 0;
-} */
-
 
 .slide {
-  height: 100svb;
+  min-height: 100svb;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.slide > *  {
+  max-width: 90svmin; 
+}
+
