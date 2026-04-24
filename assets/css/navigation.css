@@ -1,0 +1,5 @@
+nav {
+  position: fixed;
+  inset: auto var(--wa-space-m) var(--wa-space-m) auto;
+  z-index: 1;
+}

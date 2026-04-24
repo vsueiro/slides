@@ -14,6 +14,14 @@
     <script src="/assets/js/slides.js" defer></script>
   </head>
   <body>
+    <header>
+      <nav hidden>
+        <div class="wa-cluster wa-gap-2xs">
+          <wa-button size="small" variant="neutral" appearance="plain" onclick="prevSlide()"><wa-icon name="chevron-left" label="Previous Slide"></wa-icon></wa-button>
+          <wa-button size="small" variant="neutral" appearance="plain" onclick="nextSlide()"><wa-icon name="chevron-right" label="Next Slide"></wa-icon></wa-button>
+        </div>
+      </nav>
+    </header>
     <main hidden>
       {{ page.content | markdownify }}
     </main>
