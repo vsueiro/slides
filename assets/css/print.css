@@ -1,0 +1,12 @@
+@media print {
+  .slide[hidden] {
+    display: grid !important;
+  }
+
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    break-inside: avoid;
+    break-after: page;
+  }
+}

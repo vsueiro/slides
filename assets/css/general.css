@@ -8,6 +8,7 @@ html, body {
   display: grid;
   place-content: center;
   padding: var(--wa-space-2xl);
+  position: relative;
 }
 
 .slide * {
@@ -22,4 +23,21 @@ html, body {
 .slide ol,
 .slide li {
   text-align: start;
+}
+
+.slide a[title="source"] {
+  color: inherit;
+  font-size: var(--wa-font-size-smaller);;
+  place-self: end;
+  position: absolute;
+  inset: auto auto var(--wa-space-2xl) var(--wa-space-2xl);
+}
+
+.slide p img {
+  max-width: 100%;
+}
+
+.slide table img {
+  width: 100%;
+  max-width: 24ch;
 }
