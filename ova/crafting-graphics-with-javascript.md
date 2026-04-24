@@ -4,9 +4,11 @@ title: Crafing Graphics with JavaScript
 theme: dark # light|dark
 ---
 
-<!-- # Test heading
+# Test heading
 
-First slide content -->
+First slide content
+
+---
 
 ![](https://images.pdimagearchive.org/collections/colour-analysis-charts-by-emily-noyes-vanderpoel-1902/25813027795_1f4b401768_o.jpg)
 
@@ -25,13 +27,37 @@ First slide content -->
 paragraph
 
 - Item A
-- Item A
-- Item A
+- Item Abc
+- Item Xyz
 
 ---
 
-## Another  heading 2
+1. Item A
+2. Item Abc
+3. Item Xyz
 
-another paragraph with a [link](https://example.com)
+---
 
-> A citation
+paragraph with a [link](https://example.com)
+
+> A citation goes here
+
+---
+
+A `console.log("hello, world")` goes here
+
+---
+
+```html
+<p id="paragraph">
+  Testing syntax highlighting
+</p>
+```
+
+---
+
+```js
+function greet(name) {
+  console.log(`Hello ${ name ? name : 'there' }`);
+}
+```
