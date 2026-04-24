@@ -1,0 +1,4 @@
+/* https://css-tricks.com/the-hidden-attribute-is-visibly-weak/ */
+[hidden] { 
+  display: none !important;
+}

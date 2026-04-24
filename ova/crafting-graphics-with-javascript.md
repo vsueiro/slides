@@ -14,6 +14,12 @@ First slide content
 
 ---
 
+![](https://images.pdimagearchive.org/collections/colour-analysis-charts-by-emily-noyes-vanderpoel-1902/25813027795_1f4b401768_o.jpg)
+
+Some notes below image Some notes below image Some notes below image
+
+---
+
 ![](https://images.pdimagearchive.org/collections/visualizing-history-the-polish-system/chronologicalhis00peab_0139-floor-chart.jpeg)
 
 ---
@@ -44,7 +50,7 @@ paragraph with a [link](https://example.com)
 
 ---
 
-A `console.log("hello, world")` goes here
+A `console.log("hello, world")` goes **here**, not _there_
 
 ---
 
@@ -58,6 +64,35 @@ A `console.log("hello, world")` goes here
 
 ```js
 function greet(name) {
-  console.log(`Hello ${ name ? name : 'there' }`);
+  console.log(`Hello ${ name ? name : 'there' }`); // And a comment at 80 chars
 }
 ```
+
+---
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  ~~left-aligned~~ | <span>$1600</span> |
+| col 2 is |    **centered**   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+
+[My Portfolio](https://vsueiro.com "source")
+
+---
+
+&nbsp; | &nbsp;
+------ | -----
+Stuff  | More things
+**Stuff**  | More _things_ yay
+![](https://vsueiro.com/media/profile/vinicius-sueiro-2025-02.jpg) | <- Image here
+
+---
+
+A | B | C
+:-:|:-:|:-:
+![](https://vsueiro.com/media/profile/vinicius-sueiro-2025-02.jpg) | ![](https://vsueiro.com/media/profile/vinicius-sueiro-2025-02.jpg) | ![](https://vsueiro.com/media/profile/vinicius-sueiro-2025-02.jpg)
+
+---
+
+Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific <del>Southeast</del><ins>Northwest</ins>.

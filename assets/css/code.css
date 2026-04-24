@@ -1,3 +1,7 @@
+pre {
+  padding: var(--wa-space-m) var(--wa-space-xl);
+}
+
 /* Based on `pygmentize -f html -S github-dark -a .highlighter-rouge > code.css` */
 
 .highlighter-rouge:not(code.highlighter-rouge) { background: #0d1117; color: #E6EDF3 }

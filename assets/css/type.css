@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=League+Spartan:wght@100..900&display=swap);
+
+:where(:root), .wa-theme-default, .wa-light, .wa-dark, .wa-invert {
+  --wa-font-family-body: "League Spartan", ui-sans-serif, system-ui, sans-serif;
+  --wa-font-family-longform: "Fanwood Text", ui-serif, serif;
+  --wa-font-size-scale: 2;
+  /* --wa-font-size-scale: calc(0.25svmin / 1px); */
+}
+
+blockquote, em, i {
+  font-family: var(--wa-font-family-longform);
+  font-style: italic;
+}
+
+.slide *:is(h1, h2, h3, h4, h5, h6) {
+  max-width: 24ch;
+}
+
+.slide *:is(p, li, a) {
+  max-width: 48ch;
+  overflow-wrap: break-word;
+}
