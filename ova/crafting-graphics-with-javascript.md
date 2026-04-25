@@ -10,23 +10,7 @@ theme: dark # light|dark
 
 ---
 
-# Test heading
-
-First slide content
-
----
-
 ![](https://images.pdimagearchive.org/collections/colour-analysis-charts-by-emily-noyes-vanderpoel-1902/25813027795_1f4b401768_o.jpg)
-
----
-
-![](https://images.pdimagearchive.org/collections/colour-analysis-charts-by-emily-noyes-vanderpoel-1902/25813027795_1f4b401768_o.jpg)
-
-Some notes below image Some notes below image Some notes below image
-
----
-
-![](https://images.pdimagearchive.org/collections/visualizing-history-the-polish-system/chronologicalhis00peab_0139-floor-chart.jpeg)
 
 ---
 

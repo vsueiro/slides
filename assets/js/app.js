@@ -1,3 +1,5 @@
+import "./prevent-image-drag.js";
+
 // Create <section class="slide"> elements
 function createSlide(index) {
   const slide = document.createElement('section');
