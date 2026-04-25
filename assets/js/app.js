@@ -1,13 +1,13 @@
 import "./prevent-image-drag.js";
 
 // Create <section class="slide"> elements
-function createSlide(index) {
+function createSlide(counter, className) {
   const slide = document.createElement('section');
-  slide.classList.add('slide');
+  slide.classList.add('slide', className);
   slide.hidden = true;
 
-  if (index !== undefined) {
-    slide.id = `slide-${index}`;
+  if (counter !== undefined) {
+    slide.id = `slide-${counter}`;
   }
 
   return slide;
@@ -17,13 +17,17 @@ function createSlide(index) {
 function slidify(container) {
   
   const sections = [];
-  let index = 0;
-  let current = createSlide(index);
+  let counter = 1;
+  let current = createSlide(counter);
 
   for (const node of [...container.childNodes]) {
     if (node.nodeName === 'HR') {
       sections.push(current);
-      current = createSlide(++index);
+
+      // Check for color theme
+      const className = node.dataset.theme ? `wa-${ node.dataset.theme }` : undefined;
+
+      current = createSlide(++counter, className);
     } else {
       current.append(node);
     }
@@ -71,6 +75,7 @@ function changeSlide(index) {
     index = slides.length - 1;
   }
 
+  // Loop to toggle visibility
   slides.forEach((slide, i) => {
     if (i === index) {
       show(slide);
@@ -79,6 +84,7 @@ function changeSlide(index) {
     }
   });
 
+  // Update current slide index
   current = index;
 }
 
@@ -106,11 +112,13 @@ if (window.location.hash) {
     changeSlide(index);
 
   } else {
+
+    // Otherwise, show first slide
     changeSlide(0);
   }
   
 }
-// Otherwise, show first slide appears if no #slide-… is on URL
+// If no #slide-… is on URL, show first slide
 else {
   changeSlide(0);
 }

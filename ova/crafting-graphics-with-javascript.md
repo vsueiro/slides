@@ -39,6 +39,10 @@ paragraph
 2. Item Abc
 3. Item Xyz
 
+<hr data-theme="light">
+
+I am a pagraph on a **light** slide
+
 ---
 
 paragraph with a [link](https://example.com)

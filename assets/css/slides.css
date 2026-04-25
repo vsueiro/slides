@@ -5,6 +5,7 @@
   place-content: center;
   padding: var(--wa-space-2xl);
   position: relative;
+  background-color: var(--wa-color-surface-default);
 }
 
 .slide * {
