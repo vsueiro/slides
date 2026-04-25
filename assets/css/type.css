@@ -4,6 +4,15 @@
   --wa-font-family-body: "League Spartan", ui-sans-serif, system-ui, sans-serif;
   --wa-font-family-longform: "Fanwood Text", ui-serif, serif;
   --wa-font-size-scale: 2;
+
+  @media (width < 960px) {
+    --wa-font-size-scale: 1.5;
+  }
+
+  @media (width < 480px) {
+    --wa-font-size-scale: 1;
+  }
+
   /* --wa-font-size-scale: calc(0.25svmin / 1px); */
 }
 
