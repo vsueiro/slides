@@ -1,6 +1,22 @@
-@import url(reset.css);
-@import url(general.css);
-@import url(type.css);
-@import url(code.css);
-@import url(navigation.css);
-@import url(print.css);
+.slide {
+  width: 100svi; 
+  height: 100svb;
+  display: grid;
+  place-content: center;
+  padding: var(--wa-space-2xl);
+  position: relative;
+}
+
+.slide * {
+  text-align: center;
+  max-height: calc(100svb - 2 * var(--wa-space-2xl));
+  max-width: calc(100svi - 2 * var(--wa-space-2xl));
+}
+
+.slide pre,
+.slide pre code,
+.slide ul,
+.slide ol,
+.slide li {
+  text-align: start;
+}

@@ -1,0 +1,8 @@
+.slide p img {
+  max-width: 100%;
+}
+
+.slide table img {
+  width: 100%;
+  max-width: 24ch;
+}

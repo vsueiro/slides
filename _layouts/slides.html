@@ -10,15 +10,21 @@
     <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.5.0/styles/webawesome.css">
     <script type="module" src="https://ka-f.webawesome.com/webawesome@3.5.0/webawesome.loader.js"></script>
 
-    <link rel="stylesheet" href="/assets/css/slides.css" />
-    <script src="/assets/js/slides.js" defer></script>
+    <!-- Custom -->
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <script src="/assets/js/app.js" defer></script>
   </head>
   <body>
+    <div class="background"></div>
     <header>
       <nav>
-        <div class="wa-cluster wa-gap-2xs">
-          <wa-button size="small" variant="neutral" appearance="plain" onclick="prevSlide()"><wa-icon name="chevron-left" label="Previous Slide"></wa-icon></wa-button>
-          <wa-button size="small" variant="neutral" appearance="plain" onclick="nextSlide()"><wa-icon name="chevron-right" label="Next Slide"></wa-icon></wa-button>
+        <div class="wa-cluster">
+          <wa-button size="small" variant="neutral" appearance="plain" onclick="prevSlide()">
+            <wa-icon name="chevron-left" label="Previous Slide"></wa-icon>
+          </wa-button>
+          <wa-button size="small" variant="neutral" appearance="plain" onclick="nextSlide()">
+            <wa-icon name="chevron-right" label="Next Slide"></wa-icon>
+          </wa-button>
         </div>
       </nav>
     </header>
