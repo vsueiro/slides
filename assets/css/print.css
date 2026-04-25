@@ -1,4 +1,8 @@
 @media print {
+  .background {
+    display: none;
+  }
+
   .slide[hidden] {
     display: grid !important;
   }
