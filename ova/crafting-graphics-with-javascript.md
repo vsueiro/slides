@@ -4,6 +4,12 @@ title: Crafing Graphics with JavaScript
 theme: dark # light|dark
 ---
 
+![](../assets/media/sebastian-lague-and-paper-clip.gif)
+
+[“Exploring How Computers Work” by Sebastian Lague](https://youtu.be/QZwneRb-zqA "source")
+
+---
+
 # Test heading
 
 First slide content
