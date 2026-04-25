@@ -1,5 +1,12 @@
 .slide p img {
   max-width: 100%;
+  display: block;
+  margin-block-end: .5em;
+}
+
+.slide p:has(img) {
+  color: var(--wa-color-text-quiet);
+  font-size: var(--wa-font-size-xs);
 }
 
 .slide table img {

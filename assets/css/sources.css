@@ -1,7 +1,11 @@
 .slide a[title="source"] {
-  color: inherit;
-  font-size: var(--wa-font-size-smaller);;
+  color: var(--wa-color-text-quiet);
+  font-size: var(--wa-font-size-xs);
   place-self: end;
   position: absolute;
   inset: auto auto var(--wa-space-2xl) var(--wa-space-2xl);
+
+  &:not(:hover) {
+    text-decoration: none;
+  }
 }

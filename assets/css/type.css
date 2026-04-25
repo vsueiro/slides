@@ -29,3 +29,7 @@ blockquote, em, i {
   max-width: 48ch;
   overflow-wrap: break-word;
 }
+
+.slide p:has(img) {
+  max-width: 100%;
+}

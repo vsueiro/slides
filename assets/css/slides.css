@@ -13,6 +13,10 @@
   max-width: calc(100svi - 2 * var(--wa-space-2xl));
 }
 
+.slide p {
+  place-self: center;
+}
+
 .slide pre,
 .slide pre code,
 .slide ul,
