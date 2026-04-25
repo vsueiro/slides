@@ -59,47 +59,52 @@ function hide(slide) {
   slide.hidden = true;
 }
 
-function changeSlide(target) {
-  slides.forEach((slide, index) => {
-    if (index === target || slide === target) {
+function changeSlide(index) {
+
+  // Reached start
+  if (index < 0) {
+    index = 0;
+  }
+
+  // Reached end
+  else if (index >= slides.length) {
+    index = slides.length - 1;
+  }
+
+  slides.forEach((slide, i) => {
+    if (i === index) {
       show(slide);
     } else {
       hide(slide);
     }
   });
+
+  current = index;
 }
 
 function nextSlide() {
-  ++current;
-
-  if (current >= slides.length) {
-    console.log('Reached end');
-    current = slides.length - 1;
-  }
-
-  changeSlide(current);
+  changeSlide(current + 1);
 }
 
 function prevSlide() {
-  --current;
-
-  if (current < 0) {
-    console.log('Reached start');
-    current = 0;
-  }
-
-  changeSlide(current);
+  changeSlide(current - 1);
 }
 
 // Display slide that matches URL #
 if (window.location.hash) {
-  console.log(window.location.hash);
+
+  // Select element with that id
   const slide = document.querySelector(window.location.hash);
 
-  console.log(slide);
-
+  // If element exists
   if (slide) {
-    changeSlide(slide);
+
+    // Get slide index
+    const index = slides.indexOf(slide);
+
+    // Set it as current
+    changeSlide(index);
+
   } else {
     changeSlide(0);
   }
