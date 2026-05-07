@@ -1,5 +1,10 @@
 pre {
   padding: var(--wa-space-m) var(--wa-space-xl);
+  user-select: all;
+}
+
+pre * {
+  user-select: all;
 }
 
 /* Based on `pygmentize -f html -S github-dark -a .highlighter-rouge > code.css` */

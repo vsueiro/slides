@@ -3,7 +3,7 @@
   user-select: none;
 }
 
-p, h1, h2, h3, span, li, td, a {
+p, h1, h2, h3, span, li, td, a, pre, code {
   user-select: text;
 }
 
